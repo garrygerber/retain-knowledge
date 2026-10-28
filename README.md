@@ -4,11 +4,11 @@ An Agent Skill that turns a conversation's verified solutions, failed attempts, 
 
 ## Install
 
-Requires Node.js 18 or later. Replace `@your-npm-username` with the publisher's actual npm scope after publication. Run one of:
+Requires Node.js 18 or later. Run one of:
 
 ```sh
-npx --yes --package @your-npm-username/retain-knowledge retain-knowledge-install codex --global
-npx --yes --package @your-npm-username/retain-knowledge retain-knowledge-install opencode --global
+npx --yes --package @garrygerber/retain-knowledge retain-knowledge-install codex --global
+npx --yes --package @garrygerber/retain-knowledge retain-knowledge-install opencode --global
 ```
 
 Use `--project` instead of `--global` to install in the current project. The installer copies the skill only on explicit invocation and never overwrites an existing skill directory. Codex uses `.agents/skills` in the home or current project directory; OpenCode uses `~/.config/opencode/skills` or `.opencode/skills` in the current project. Restart the session if discovery does not update.
@@ -23,4 +23,8 @@ Review the final report to confirm where the knowledge was saved and whether it 
 
 ## Publishing
 
-Before publication, replace the placeholder package scope with your npm username or organization, verify name availability, choose and add a license, and add repository and author metadata as appropriate. Inspect the files with `npm pack --dry-run`. After testing and signing in with a verified npm account and 2FA, use `npm publish --access public` for a public scoped package. See npm's current publishing and authentication documentation.
+Inspect the files with `npm pack --dry-run`. After testing and signing in with a verified npm account and 2FA, use `npm publish --access public` for a public scoped package. See npm's current publishing and authentication documentation.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
