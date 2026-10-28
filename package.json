@@ -1,0 +1,10 @@
+{
+  "name": "@your-npm-username/retain-knowledge",
+  "version": "1.0.0",
+  "description": "An agent skill for retaining practical knowledge from a conversation",
+  "license": "UNLICENSED",
+  "bin": { "retain-knowledge-install": "bin/install.cjs" },
+  "files": ["bin", "skills"],
+  "engines": { "node": ">=18" },
+  "keywords": ["agent-skills", "codex", "opencode", "memory", "knowledge"]
+}
